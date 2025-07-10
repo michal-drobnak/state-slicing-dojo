@@ -1,0 +1,26 @@
+{
+  "Signal store feature": {
+    "scope": "typescript",
+    "prefix": "sfeat",
+    "body": [
+      "import { signalStoreFeature, type, withMethods, withState, withComputed, withHooks } from '@ngrx/signals';",
+      "",
+      "type $1State = {};",
+      "",
+      "const $2_INITIAL_STATE: $1State = {};",
+      "",
+      "// eslint-disable-next-line @typescript-eslint/explicit-function-return-type",
+      "export const with$1 = <_>() =>",
+      "  signalStoreFeature(",
+      "    {",
+      "      state: type<{}>()",
+      "    },",
+      "    withState($2_INITIAL_STATE),",
+      "    withComputed(() => ({})),",
+      "    withMethods(() => ({})),",
+      "    withHooks(() => ({}))",
+      "  );"
+    ],
+    "description": "Signal store feature skeleton"
+  }
+}
